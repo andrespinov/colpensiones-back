@@ -1,13 +1,13 @@
-package com.colpensiones.colpensionesback;
+package com.colpensiones;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ColpensionesBackApplication {
+public class ColpensionesApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ColpensionesBackApplication.class, args);
+		SpringApplication.run(ColpensionesApplication.class, args);
 	}
 
 }
