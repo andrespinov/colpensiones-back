@@ -37,6 +37,7 @@ public class IndependentWorkerController {
 
 		return repository.findById(document).map(worker -> {
 			worker.setApproved(modifiedWorker.isApproved());
+			worker.setReviewed(true);
 			return repository.save(worker);
 		}).orElseThrow(() -> new IndependentWorkerNotFoundException(document));
 	}

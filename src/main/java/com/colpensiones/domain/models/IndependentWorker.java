@@ -18,6 +18,7 @@ public class IndependentWorker {
 	private String gender;
 	private String job;
 	private double monthlyIncome;
+	private boolean reviewed;
 	private int telephone;
 
 	IndependentWorker() {}
@@ -92,6 +93,14 @@ public class IndependentWorker {
 
 	public void setMonthlyIncome(double monthlyIncome) {
 		this.monthlyIncome = monthlyIncome;
+	}
+	
+	public boolean isReviewed() {
+		return reviewed;
+	}
+
+	public void setReviewed(boolean reviewed) {
+		this.reviewed = reviewed;
 	}
 
 	public int getTelephone() {
