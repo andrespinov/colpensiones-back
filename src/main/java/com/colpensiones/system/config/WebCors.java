@@ -10,7 +10,7 @@ public class WebCors implements WebMvcConfigurer {
 	@Override
 	public void addCorsMappings(CorsRegistry registry) {
 		registry.addMapping("/**").allowedHeaders("*")
-				.allowedOrigins("http://localhost:4200", "https://colpensiones-frontend.herokuapp.com/")
+				.allowedOrigins("http://localhost:4200", "https://colpensiones-frontend.herokuapp.com")
 				.allowedMethods("GET", "POST", "PUT");
 	}
 }
